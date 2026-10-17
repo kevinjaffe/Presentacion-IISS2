@@ -1,7 +1,7 @@
 // Configura estos dos valores con los de tu proyecto Supabase.
 // Los encuentras en: Settings > API del dashboard de Supabase.
-const SUPABASE_URL = "https://TU-PROYECTO.supabase.co";
-const SUPABASE_ANON_KEY = "TU-ANON-KEY";
+const SUPABASE_URL = "https://cbetagvyjbxqeptwhthq.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_SHI9IwCZeETs55FSzVIOeg_V3zcqFRP";
 
 const form = document.getElementById("form");
 const msgOk = document.getElementById("msg-ok");
