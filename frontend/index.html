@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Registro de contacto</h1>
+
+    <p class="msg ok" id="msg-ok" hidden></p>
+    <p class="msg error" id="msg-error" hidden>Ocurrió un error al guardar. Intenta de nuevo.</p>
+
+    <form id="form">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required maxlength="100" placeholder="Tu nombre">
+
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" name="correo" required maxlength="100" placeholder="tucorreo@ejemplo.com">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
