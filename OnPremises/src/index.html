@@ -10,13 +10,10 @@
   <main class="card">
     <h1>Registro de contacto</h1>
 
-    <?php if (isset($_GET['ok'])): ?>
-      <p class="msg ok">Registro guardado correctamente. ID: <?php echo htmlspecialchars($_GET['id']); ?></p>
-    <?php elseif (isset($_GET['error'])): ?>
-      <p class="msg error">Ocurrió un error al guardar. Intenta de nuevo.</p>
-    <?php endif; ?>
+    <p class="msg ok" id="msg-ok" hidden></p>
+    <p class="msg error" id="msg-error" hidden>Ocurrió un error al guardar. Intenta de nuevo.</p>
 
-    <form action="submit.php" method="post">
+    <form id="form" action="submit.php" method="post">
       <label for="nombre">Nombre</label>
       <input type="text" id="nombre" name="nombre" required maxlength="100" placeholder="Tu nombre">
 
@@ -26,5 +23,7 @@
       <button type="submit">Enviar</button>
     </form>
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
